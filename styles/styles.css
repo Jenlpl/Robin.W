@@ -24,18 +24,28 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  @media (min-width: 1440px) {
+    header {
+      height: 88px; } }
 
 .logo {
   z-index: 3;
   padding-left: 20px; }
+  @media (min-width: 768px) {
+    .logo {
+      padding-left: 30px; } }
+  @media (min-width: 1440px) {
+    .logo {
+      padding-left: 50px; } }
 
 .nav {
   background-color: #ffffff;
   color: white; }
-  @media (min-width: 1440px) {
+  @media (min-width: 768px) {
     .nav {
       background-color: transparent;
-      z-index: 2; } }
+      z-index: 2;
+      height: 100%; } }
 
 @media (max-width: 767px) {
   .nav--opened .nav__list {
@@ -61,7 +71,22 @@ header {
   list-style-type: none; }
   @media (min-width: 768px) {
     .nav__list {
-      display: flex; } }
+      display: flex;
+      padding-right: 30px;
+      font-size: 16px;
+      background-color: black;
+      height: 100%;
+      align-items: center; } }
+  @media (min-width: 1440px) {
+    .nav__list {
+      padding-right: 50px; } }
+  .nav__list .nav__item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .nav__list .nav__item:hover {
+    background-color: #5221E6; }
 
 .nav__toggle {
   position: absolute;
@@ -105,8 +130,11 @@ header {
     display: block; } }
 
 .nav__link {
-  color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  color: white; }
+  @media (min-width: 768px) {
+    .nav__link {
+      margin: 20px; } }
 
 /* здесь подключите шрифты*/
 .visually-hidden {
