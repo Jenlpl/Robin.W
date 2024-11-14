@@ -7,35 +7,63 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
-  color: white; }
+  color: white;
+}
 
 img {
   height: auto;
-  object-fit: contain; }
+  object-fit: contain;
+}
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 header {
   height: 72px;
   background-color: black;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+}
+@media (min-width: 1440px) {
+  header {
+    height: 88px;
+  }
+}
 
 .logo {
   z-index: 3;
-  padding-left: 20px; }
+  padding-left: 20px;
+}
+@media (min-width: 768px) {
+  .logo {
+    padding-left: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .logo {
+    padding-left: 50px;
+  }
+}
+.logo img {
+  height: 24px;
+  width: 78px;
+}
 
 .nav {
   background-color: #ffffff;
-  color: white; }
-  @media (min-width: 1440px) {
-    .nav {
-      background-color: transparent;
-      z-index: 2; } }
+  color: white;
+}
+@media (min-width: 768px) {
+  .nav {
+    background-color: transparent;
+    z-index: 2;
+    height: 100%;
+  }
+}
 
 @media (max-width: 767px) {
   .nav--opened .nav__list {
@@ -49,19 +77,47 @@ header {
     gap: 20px;
     padding-top: 40px;
     padding-left: 20px;
-    padding-bottom: 20px; } }
+    padding-bottom: 20px;
+  }
+}
 
 @media (max-width: 767px) {
   .nav--closed .nav__list {
-    display: none; } }
+    display: none;
+  }
+}
 
 .nav__list {
   margin: 0;
   padding: 0;
-  list-style-type: none; }
-  @media (min-width: 768px) {
-    .nav__list {
-      display: flex; } }
+  list-style-type: none;
+}
+@media (min-width: 768px) {
+  .nav__list {
+    display: flex;
+    padding-right: 30px;
+    font-size: 16px;
+    background-color: black;
+    height: 100%;
+    align-items: center;
+  }
+}
+@media (min-width: 1440px) {
+  .nav__list {
+    padding-right: 50px;
+  }
+}
+.nav__list .nav__item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .nav__list .nav__item:hover {
+    background-color: #5221E6;
+  }
+}
 
 .nav__toggle {
   position: absolute;
@@ -73,40 +129,56 @@ header {
   height: 24px;
   background-color: #ffffff;
   cursor: pointer;
-  border: none; }
-  .nav__toggle:hover {
-    opacity: 0.8; }
-  .nav__toggle:active {
-    opacity: 0.6; }
-  @media (min-width: 768px) {
-    .nav__toggle {
-      display: none; } }
+  border: none;
+}
+.nav__toggle:hover {
+  opacity: 0.8;
+}
+.nav__toggle:active {
+  opacity: 0.6;
+}
+@media (min-width: 768px) {
+  .nav__toggle {
+    display: none;
+  }
+}
 
 .nav--closed .nav__toggle {
   background-image: url("../images/hamburger.svg");
   background-repeat: no-repeat;
   top: 20px;
   right: 21px;
-  z-index: 5; }
+  z-index: 5;
+}
 
 .nav--opened .nav__toggle {
   background-image: url("../images/close.svg");
   background-color: black;
   background-repeat: no-repeat;
   background-size: 20px;
-  z-index: 5; }
+  z-index: 5;
+}
 
 .nav--nojs .nav__toggle {
-  display: none; }
+  display: none;
+}
 
 @media (max-width: 767px) {
   .nav--nojs .nav__list {
     position: static;
-    display: block; } }
+    display: block;
+  }
+}
 
 .nav__link {
+  text-decoration: none;
   color: white;
-  text-decoration: none; }
+}
+@media (min-width: 768px) {
+  .nav__link {
+    margin: 20px;
+  }
+}
 
 /* здесь подключите шрифты*/
 .visually-hidden {
@@ -119,6 +191,5 @@ header {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden; }
-
-/*# sourceMappingURL=styles.css.map */
+  overflow: hidden;
+}
