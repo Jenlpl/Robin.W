@@ -18,7 +18,7 @@ header {
   @media (min-width: $desktop-width) {
     padding-left: 50px;
   }
-  .logo img {
+  img {
     height: 24px;
     width: 78px;
   }
@@ -81,7 +81,9 @@ header {
     justify-content: center;
 }
 .nav__item:hover {
+  @media (min-width: $tablet-width) {
   background-color: #5221E6;
+}
 }
   }
   
