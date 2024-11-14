@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    background-color: $background-grey;
+    flex-direction: column;
+    padding: 40px 20px;
+    .footer__logo {
+        width: 130px;
+        height: 40px;
+    }
+    .footer__navbar {
+        list-style: none;
+        a {
+        color: $base-color-text;
+        text-decoration: none;
+        }
+    }
+}
