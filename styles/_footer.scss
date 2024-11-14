@@ -3,15 +3,39 @@
     background-color: $background-grey;
     flex-direction: column;
     padding: 40px 20px;
+    .footer__logo-icons {
+        display: flex;
+    gap: 25px;
+    flex-direction: column;
+    margin-bottom: 30px;
+    .footer__icons {
+        display: flex;
+        gap: 10px;
+    }
+    }
     .footer__logo {
         width: 130px;
         height: 40px;
     }
     .footer__navbar {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
         list-style: none;
+        .footer__navlink {
+            height: 40px;
+        }
         a {
         color: $base-color-text;
         text-decoration: none;
+        }
+    }
+    .footer__copyright-webflow {
+        display: flex;
+        flex-direction: column;
+        p {
+            margin: 0;
+            color: #8491A0;
         }
     }
 }

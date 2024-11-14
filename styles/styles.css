@@ -174,13 +174,32 @@ header {
   background-color: #181823;
   flex-direction: column;
   padding: 40px 20px; }
+  .footer .footer__logo-icons {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    margin-bottom: 30px; }
+    .footer .footer__logo-icons .footer__icons {
+      display: flex;
+      gap: 10px; }
   .footer .footer__logo {
     width: 130px;
     height: 40px; }
   .footer .footer__navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
     list-style: none; }
+    .footer .footer__navbar .footer__navlink {
+      height: 40px; }
     .footer .footer__navbar a {
       color: white;
       text-decoration: none; }
+  .footer .footer__copyright-webflow {
+    display: flex;
+    flex-direction: column; }
+    .footer .footer__copyright-webflow p {
+      margin: 0;
+      color: #8491A0; }
 
 /*# sourceMappingURL=styles.css.map */
