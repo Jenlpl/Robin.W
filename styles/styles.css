@@ -37,6 +37,9 @@ header {
   @media (min-width: 1440px) {
     .logo {
       padding-left: 50px; } }
+  .logo .logo img {
+    height: 24px;
+    width: 78px; }
 
 .nav {
   background-color: #ffffff;
