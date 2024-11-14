@@ -45,9 +45,7 @@ header {
       background-color: black;
       display: flex;
         flex-direction: column;
-        gap: 20px;
         padding-top: 40px;
-        padding-left: 20px;
         padding-bottom: 20px;
     }
   }
@@ -79,7 +77,14 @@ header {
   display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: $mobile-width-only) {
+      height: 35px;
+    }
+    &:hover {
+      background-color: #5221E6;
+    }
 }
+
 .nav__item:hover {
   @media (min-width: $tablet-width) {
   background-color: #5221E6;
@@ -144,5 +149,6 @@ header {
     color: white;
     @media (min-width: $tablet-width) {
     margin: 20px;
+    width: 100%;
     }
   }

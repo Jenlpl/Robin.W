@@ -59,9 +59,7 @@ header {
     background-color: black;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     padding-top: 40px;
-    padding-left: 20px;
     padding-bottom: 20px; } }
 
 @media (max-width: 767px) {
@@ -88,6 +86,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center; }
+    @media (max-width: 767px) {
+      .nav__list .nav__item {
+        height: 35px; } }
+    .nav__list .nav__item:hover {
+      background-color: #5221E6; }
   @media (min-width: 768px) {
     .nav__list .nav__item:hover {
       background-color: #5221E6; } }
@@ -138,7 +141,8 @@ header {
   color: white; }
   @media (min-width: 768px) {
     .nav__link {
-      margin: 20px; } }
+      margin: 20px;
+      width: 100%; } }
 
 /* здесь подключите шрифты*/
 .visually-hidden {
