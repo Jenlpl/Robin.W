@@ -118,7 +118,7 @@ header {
   }
   
   .nav--closed .nav__toggle {
-    background-image: url("../images/hamburger.svg");
+    background-image: url("../images/hamburger-menu.svg");
     background-repeat: no-repeat;
     top: 20px;
     right: 21px;
@@ -126,7 +126,7 @@ header {
   }
   
   .nav--opened .nav__toggle {
-    background-image: url("../images/close.svg");
+    background-image: url("../images/close-button.svg");
     background-color: black;
     background-repeat: no-repeat;
     background-size: 20px;
