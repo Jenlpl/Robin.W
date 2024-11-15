@@ -30,6 +30,13 @@ img {
   object-fit: contain;
 }
 
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 *,
 *::before,
 *::after {
@@ -221,6 +228,7 @@ header {
   background-color: #181823;
   flex-direction: column;
   padding: 40px 20px;
+  margin-top: auto;
 }
 @media (min-width: 768px) {
   .footer {
@@ -253,7 +261,7 @@ header {
   display: flex;
   gap: 10px;
 }
-.footer .footer__logo {
+.footer__logo {
   width: 130px;
   height: 40px;
 }
