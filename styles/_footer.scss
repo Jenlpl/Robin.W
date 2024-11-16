@@ -1,63 +1,75 @@
 .footer {
+  background-color: $background-grey;
+
   .container {
     display: flex;
-  background-color: $background-grey;
-  flex-direction: column;
-  padding: 40px 20px;
-  margin-top: auto;
-  @media (min-width: $tablet-width) {
-    padding: 70px 30px;
+    flex-direction: column;
+    padding: 40px 20px;
+    margin-top: auto;
+
+    @media (min-width: $tablet-width) {
+      padding: 70px 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 80px 50px;
+    }
   }
-  @media (min-width: $desktop-width) {
-    padding: 80px 50px;
-  }
-  }
-  
+
   .footer__main {
     @media (min-width: $tablet-width) {
       display: flex;
       gap: 200px;
     }
+
     @media (min-width: $desktop-width) {
-        gap: 700px;
-      }
+      gap: 700px;
+    }
   }
+
   .footer__logo-icons {
     display: flex;
     gap: 25px;
     flex-direction: column;
     margin-bottom: 40px;
+
     .footer__icons {
       display: flex;
       gap: 10px;
     }
   }
+
   &__logo {
     width: 130px;
     height: 40px;
   }
+
   .footer__navbar {
     display: flex;
     flex-direction: column;
     padding: 0;
     list-style: none;
     margin-bottom: 40px;
+
     @media (min-width: $tablet-width) {
       height: 192px;
       display: flex;
-    flex-direction: row;
-    gap: 150px;
+      flex-direction: row;
+      gap: 150px;
     }
+
     .footer__navbar-1 {
       margin: 0;
       padding: 0;
       list-style: none;
     }
+
     .footer__navbar-2 {
       margin: 0;
       padding: 0;
       list-style: none;
     }
+
     .footer__navlink {
       line-height: 40px;
     }
@@ -67,9 +79,11 @@
       text-decoration: none;
     }
   }
+
   .copyright-webflow {
     display: flex;
     flex-direction: column;
+
     p {
       margin: 0;
       color: #8491a0;
