@@ -1,11 +1,13 @@
 header {
-    height: 72px;
+    @media (min-width: $desktop-width) {
+    height: 88px;
+    }
+    .container {
+      height: 72px;
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    @media (min-width: $desktop-width) {
-    height: 88px;
     }
 }
 

@@ -1,15 +1,18 @@
 .footer {
-  display: flex;
+  .container {
+    display: flex;
   background-color: $background-grey;
   flex-direction: column;
   padding: 40px 20px;
   margin-top: auto;
   @media (min-width: $tablet-width) {
-    padding: 60px 30px;
+    padding: 70px 30px;
   }
   @media (min-width: $desktop-width) {
-  padding: 80px 50px;
-}
+    padding: 80px 50px;
+  }
+  }
+  
   .footer__main {
     @media (min-width: $tablet-width) {
       display: flex;
@@ -38,7 +41,7 @@
     flex-direction: column;
     padding: 0;
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     @media (min-width: $tablet-width) {
       height: 192px;
       display: flex;

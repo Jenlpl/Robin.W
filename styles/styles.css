@@ -40,17 +40,17 @@ img {
   margin: 0 auto;
 }
 
-header {
+@media (min-width: 1440px) {
+  header {
+    height: 88px;
+  }
+}
+header .container {
   height: 72px;
   background-color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-@media (min-width: 1440px) {
-  header {
-    height: 88px;
-  }
 }
 
 .logo {
@@ -220,7 +220,7 @@ header {
   overflow: hidden;
 }
 
-.footer {
+.footer .container {
   display: flex;
   background-color: #181823;
   flex-direction: column;
@@ -228,12 +228,12 @@ header {
   margin-top: auto;
 }
 @media (min-width: 768px) {
-  .footer {
-    padding: 60px 30px;
+  .footer .container {
+    padding: 70px 30px;
   }
 }
 @media (min-width: 1440px) {
-  .footer {
+  .footer .container {
     padding: 80px 50px;
   }
 }
@@ -267,7 +267,7 @@ header {
   flex-direction: column;
   padding: 0;
   list-style: none;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 @media (min-width: 768px) {
   .footer .footer__navbar {
