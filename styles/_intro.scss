@@ -1,0 +1,12 @@
+.intro {
+  height: 652px;
+  background-color: black;
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    width: 360px;
+    height: 288px;
+  }
+}
