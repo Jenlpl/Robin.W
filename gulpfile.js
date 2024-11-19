@@ -28,6 +28,7 @@ export function startServer() {
     }
   })
   watch(`styles/**/*.scss`, series(processStyles));
+  watch(`**/*.html`).on('change', server.reload);
 }
 
 export function runDev(done) {
