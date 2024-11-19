@@ -54,6 +54,11 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
+@media (min-width: 768px) {
+  header .container {
+    height: 88px;
+  }
+}
 
 .logo {
   z-index: 3;
@@ -331,21 +336,41 @@ header .container {
 }
 
 .intro {
-  height: 652px;
   background-color: black;
 }
 .intro .container {
+  height: 652px;
   display: flex;
   flex-direction: column;
   padding: 0;
 }
+@media (min-width: 768px) {
+  .intro .container {
+    height: 814px;
+    flex-direction: row;
+    align-items: center;
+  }
+}
 .intro__img {
   height: 288px;
+}
+@media (min-width: 768px) {
+  .intro__img {
+    width: 384px;
+    height: 650px;
+  }
 }
 .intro__img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+@media (min-width: 768px) {
+  .intro__text {
+    position: absolute;
+    right: 60px;
+    width: 408px;
+  }
 }
 .intro h1 {
   font-size: 32px;
@@ -356,6 +381,15 @@ header .container {
   margin-left: 20px;
   margin-top: 50px;
   margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .intro h1 {
+    width: 408px;
+    height: 335px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67.38px;
+  }
 }
 .intro h1 span {
   color: rgba(255, 255, 255, 0.5019607843);
