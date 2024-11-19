@@ -45,7 +45,7 @@ header {
 }
 @media (min-width: 1440px) {
   header {
-    height: 88px;
+    background: linear-gradient(to right, black 30%, #181823 20% 100%);
   }
 }
 header .container {
@@ -129,6 +129,7 @@ header .container {
 @media (min-width: 1440px) {
   .nav__list {
     padding-right: 50px;
+    background-color: #181823;
   }
 }
 .nav__list .nav__item {
@@ -338,6 +339,11 @@ header .container {
 .intro {
   background-color: black;
 }
+@media (min-width: 768px) {
+  .intro {
+    background: linear-gradient(to right, black 30%, #181823 20% 100%);
+  }
+}
 .intro .container {
   height: 652px;
   display: flex;
@@ -357,6 +363,12 @@ header .container {
 @media (min-width: 768px) {
   .intro__img {
     width: 384px;
+    height: 650px;
+  }
+}
+@media (min-width: 1440px) {
+  .intro__img {
+    width: 750px;
     height: 650px;
   }
 }

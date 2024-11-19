@@ -1,5 +1,8 @@
 .intro {
   background-color: black;
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to right, black 30%, #181823 20% 100%);
+  }
   .container {
     height: 652px;
     display: flex;
@@ -15,6 +18,10 @@
     height: 288px;
     @media (min-width: $tablet-width) {
         width: 384px;
+height: 650px;
+    }
+    @media (min-width: $desktop-width) {
+      width: 750px;
 height: 650px;
     }
     img {
