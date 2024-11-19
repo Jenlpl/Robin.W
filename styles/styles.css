@@ -337,8 +337,33 @@ header .container {
 .intro .container {
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
-.intro img {
-  width: 360px;
+.intro__img {
   height: 288px;
+}
+.intro__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.intro h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.5px;
+  width: 320px;
+  height: 117px;
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.intro h1 span {
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+.intro p {
+  width: 320px;
+  height: 135px;
+  font-size: 18px;
+  line-height: 27px;
+  margin-left: 20px;
 }

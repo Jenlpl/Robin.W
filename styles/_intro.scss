@@ -4,9 +4,34 @@
   .container {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
-  img {
-    width: 360px;
+  &__img {
     height: 288px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  h1 {
+font-size: 32px;
+font-weight: 700;
+line-height: 38.5px;
+width: 320px;
+height: 117px;
+margin-left: 20px;
+margin-top: 50px;
+margin-bottom: 0;
+span {
+  color:#FFFFFF80;
+}
+  }
+  p {
+    width: 320px;
+height: 135px;
+font-size: 18px;
+line-height: 27px;
+margin-left: 20px;
   }
 }
