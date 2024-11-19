@@ -339,7 +339,7 @@ header .container {
 .intro {
   background-color: black;
 }
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   .intro {
     background: linear-gradient(to right, black 30%, #181823 20% 100%);
   }
@@ -384,6 +384,11 @@ header .container {
     width: 408px;
   }
 }
+@media (min-width: 1440px) {
+  .intro__text {
+    width: 738px;
+  }
+}
 .intro h1 {
   font-size: 32px;
   font-weight: 700;
@@ -403,6 +408,14 @@ header .container {
     line-height: 67.38px;
   }
 }
+@media (min-width: 1440px) {
+  .intro h1 {
+    font-size: 78px;
+    font-weight: 700;
+    line-height: 93.84px;
+    width: 100%;
+  }
+}
 .intro h1 span {
   color: rgba(255, 255, 255, 0.5019607843);
 }
@@ -412,4 +425,9 @@ header .container {
   font-size: 18px;
   line-height: 27px;
   margin-left: 20px;
+}
+@media (min-width: 1440px) {
+  .intro p {
+    width: 100%;
+  }
 }

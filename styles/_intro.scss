@@ -1,6 +1,6 @@
 .intro {
   background-color: black;
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     background: linear-gradient(to right, black 30%, #181823 20% 100%);
   }
   .container {
@@ -36,6 +36,11 @@ height: 650px;
     right: 60px;
    width: 408px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 738px;
+  }
+
   }
   h1 {
 font-size: 32px;
@@ -53,6 +58,13 @@ font-size: 56px;
 font-weight: 700;
 line-height: 67.38px;
 }
+@media (min-width: $desktop-width) {
+font-size: 78px;
+font-weight: 700;
+line-height: 93.84px;
+width: 100%;
+}
+
 span {
   color:#FFFFFF80;
 }
@@ -63,5 +75,8 @@ height: 135px;
 font-size: 18px;
 line-height: 27px;
 margin-left: 20px;
+@media (min-width: $desktop-width) {
+  width: 100%;
+}
   }
 }
