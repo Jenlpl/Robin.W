@@ -345,14 +345,13 @@ header .container {
   }
 }
 .intro .container {
-  height: 652px;
   display: flex;
   flex-direction: column;
   padding: 0;
+  padding-bottom: 25px;
 }
 @media (min-width: 768px) {
   .intro .container {
-    height: 814px;
     flex-direction: row;
     align-items: center;
   }
@@ -364,6 +363,7 @@ header .container {
   .intro__img {
     width: 384px;
     height: 650px;
+    margin: 88px 0;
   }
 }
 @media (min-width: 1440px) {
@@ -379,14 +379,14 @@ header .container {
 }
 @media (min-width: 768px) {
   .intro__text {
-    position: absolute;
-    right: 60px;
-    width: 408px;
+    margin-left: -85px;
   }
 }
 @media (min-width: 1440px) {
   .intro__text {
     width: 738px;
+    margin-left: -100px;
+    padding-bottom: 30px;
   }
 }
 .intro h1 {
@@ -394,7 +394,6 @@ header .container {
   font-weight: 700;
   line-height: 38.5px;
   width: 320px;
-  height: 117px;
   margin-left: 20px;
   margin-top: 50px;
   margin-bottom: 0;
@@ -402,7 +401,6 @@ header .container {
 @media (min-width: 768px) {
   .intro h1 {
     width: 408px;
-    height: 335px;
     font-size: 56px;
     font-weight: 700;
     line-height: 67.38px;
@@ -421,7 +419,6 @@ header .container {
 }
 .intro p {
   width: 320px;
-  height: 135px;
   font-size: 18px;
   line-height: 27px;
   margin-left: 20px;
