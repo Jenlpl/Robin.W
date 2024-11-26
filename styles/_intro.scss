@@ -1,8 +1,7 @@
 .intro {
   background-color: black;
-  @media (min-width: $desktop-width) {
-    background: linear-gradient(to right, black 30%, #181823 20% 100%);
-  }
+  @media (min-width: $desktop-width) { background: linear-gradient(to right, black 30%, #181823 20% 100%);
+  };
   .container {
     display: flex;
     flex-direction: column;
