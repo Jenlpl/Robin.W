@@ -451,7 +451,7 @@ header .container {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  color: #8491A0;
+  color: #8491a0;
 }
 #advantages .advantages__header p {
   font-size: 32px;
@@ -471,52 +471,76 @@ header .container {
     width: 690px;
   }
 }
-#advantages .advantages__number {
-  color: #8491A0;
-  font-size: 117px;
-  font-weight: 400;
-  margin-top: 90px;
-  margin-bottom: 45px;
-}
-@media (min-width: 768px) {
-  #advantages .advantages__list {
-    display: flex;
-    gap: 50px;
-  }
-}
-#advantages .advantages__list .advantages__item {
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 768px) {
-  #advantages .advantages__list .advantages__item {
-    width: 212px;
-  }
-}
-@media (min-width: 1440px) {
-  #advantages .advantages__list .advantages__item {
-    width: 416px;
-    padding-right: 50px;
-  }
-}
-#advantages .advantages__list .advantages__item .advantages__company {
+#advantages .advantages__company {
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
   margin-bottom: 0;
 }
-#advantages .advantages__list .advantages__item .advantages__company--google {
-  color: #3CC74E;
-}
-#advantages .advantages__list .advantages__item .advantages__company--facebook {
-  color: #609BFF;
-}
-#advantages .advantages__list .advantages__item .advantages__company--dribbble {
-  color: #E95D90;
-}
-#advantages .advantages__list .advantages__item .advantages__description {
+#advantages .advantages__description {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: #8491A0;
+  color: #8491a0;
+}
+
+.green-text {
+  color: #3cc74e;
+}
+
+.blue-text {
+  color: #609bff;
+}
+
+.pink-text {
+  color: #e95d90;
+}
+
+.advantages__list {
+  list-style: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .advantages__list {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+  }
+}
+
+.advantages__item {
+  counter-increment: item;
+  position: relative;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .advantages__item {
+    width: 212px;
+  }
+}
+@media (min-width: 1440px) {
+  .advantages__item {
+    width: 416px;
+    padding-right: 50px;
+  }
+}
+
+.advantages__item::before {
+  content: counter(item, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #8491a0;
+  border-radius: 50%;
+  width: 126px;
+  font-family: "Sen", sans-serif;
+  font-size: 117px;
+  height: 141px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
