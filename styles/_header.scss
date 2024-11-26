@@ -2,7 +2,7 @@ header {
   background-color: black;
 
   @media (min-width: $desktop-width) {
-    height: 88px;
+    background: linear-gradient(to right, black 30%, #181823 20% 100%);
   }
 
   .container {
@@ -10,6 +10,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (min-width: $tablet-width) {
+      height: 88px;
+    }
   }
 }
 
@@ -79,6 +82,7 @@ header {
 
   @media (min-width: $desktop-width) {
     padding-right: 50px;
+      background-color: #181823;
   }
 
   .nav__item {

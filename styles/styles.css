@@ -45,7 +45,7 @@ header {
 }
 @media (min-width: 1440px) {
   header {
-    height: 88px;
+    background: linear-gradient(to right, black 30%, #181823 20% 100%);
   }
 }
 header .container {
@@ -53,6 +53,11 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (min-width: 768px) {
+  header .container {
+    height: 88px;
+  }
 }
 
 .logo {
@@ -124,6 +129,7 @@ header .container {
 @media (min-width: 1440px) {
   .nav__list {
     padding-right: 50px;
+    background-color: #181823;
   }
 }
 .nav__list .nav__item {
@@ -328,4 +334,97 @@ header .container {
 .footer .copyright-webflow p {
   margin: 0;
   color: #8491a0;
+}
+
+.intro {
+  background-color: black;
+}
+@media (min-width: 1440px) {
+  .intro {
+    background: linear-gradient(to right, black 30%, #181823 20% 100%);
+  }
+}
+.intro .container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .intro .container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.intro__img {
+  height: 288px;
+}
+@media (min-width: 768px) {
+  .intro__img {
+    width: 384px;
+    height: 650px;
+    margin: 88px 0;
+  }
+}
+@media (min-width: 1440px) {
+  .intro__img {
+    width: 750px;
+    height: 650px;
+  }
+}
+.intro__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .intro__text {
+    margin-left: -85px;
+  }
+}
+@media (min-width: 1440px) {
+  .intro__text {
+    width: 738px;
+    margin-left: -100px;
+    padding-bottom: 30px;
+  }
+}
+.intro h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.5px;
+  width: 320px;
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .intro h1 {
+    width: 408px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67.38px;
+  }
+}
+@media (min-width: 1440px) {
+  .intro h1 {
+    font-size: 78px;
+    font-weight: 700;
+    line-height: 93.84px;
+    width: 100%;
+  }
+}
+.intro h1 span {
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+.intro p {
+  width: 320px;
+  font-size: 18px;
+  line-height: 27px;
+  margin-left: 20px;
+}
+@media (min-width: 1440px) {
+  .intro p {
+    width: 100%;
+  }
 }
