@@ -38,7 +38,6 @@ header {
   background-color: #ffffff;
   color: $base-color-text;
 
-
   @media (min-width: $tablet-width) {
     background-color: transparent;
     z-index: 2;
@@ -77,12 +76,12 @@ header {
     font-size: 16px;
     background-color: black;
     height: 100%;
-    align-items: center
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 50px;
-      background-color: #181823;
+    background-color: #181823;
   }
 
   .nav__item {
@@ -96,13 +95,13 @@ header {
     }
 
     &:hover {
-      background-color: #5221E6;
+      background-color: #5221e6;
     }
   }
 
   .nav__item:hover {
     @media (min-width: $tablet-width) {
-      background-color: #5221E6;
+      background-color: #5221e6;
     }
   }
 }
