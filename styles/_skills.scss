@@ -9,6 +9,15 @@
             padding: 40px 40px;
             gap: 20px;
         }
+        @media (min-width: $desktop-width) {
+flex-direction: row;
+padding: 100px 40px
+        }
+    }
+    &__text {
+        @media (min-width: $desktop-width) {
+            width: 416px;
+        }
     }
     &__header {
 font-size: 32px;
@@ -20,12 +29,18 @@ font-size: 55px;
 font-weight: 700;
 line-height: 66.17px;
 }
+@media (min-width: $desktop-width) {
+    margin-top: 20px;
+}
     }
     &__description {
 font-size: 18px;
 font-weight: 400;
 line-height: 27px;
 color: #8491A0;
+@media (min-width: $desktop-width) {
+    width: 368px;
+}
     }
     &__list {
         list-style: none;
@@ -41,6 +56,9 @@ color: #8491A0;
     }
     &__item {
         width: 332px;
+        @media (min-width: $desktop-width) {
+            width: 416px;
+        }
         h3 {
 font-size: 24px;
 font-weight: 700;
@@ -53,6 +71,12 @@ font-size: 16px;
 font-weight: 400;
 line-height: 24px;
 color: #8491A0;
+@media (min-width: $tablet-width) {
+    width: 284px;
+}
+@media (min-width: $desktop-width) {
+    width: 368px;
+}
         }
     }
 }
