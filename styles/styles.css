@@ -725,3 +725,26 @@ header .container {
     width: 368px;
   }
 }
+
+.logos {
+  background-color: black;
+}
+.logos .container {
+  display: flex;
+  padding: 0;
+}
+.logos__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.logos__item {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #181823;
+}
