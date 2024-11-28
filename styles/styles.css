@@ -732,6 +732,7 @@ header .container {
 .logos .container {
   display: flex;
   padding: 0;
+  overflow: hidden;
 }
 .logos__list {
   display: grid;
@@ -741,10 +742,36 @@ header .container {
   margin: 0;
   padding: 0;
 }
+@media (min-width: 1440px) {
+  .logos__list {
+    display: flex;
+    animation: sliding 15s linear infinite;
+  }
+}
 .logos__item {
   height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #181823;
+}
+@media (min-width: 1440px) {
+  .logos__item {
+    width: 340px;
+    flex-shrink: 0;
+  }
+}
+
+@keyframes sliding {
+  0% {
+    transform: translate(100%, 0);
+  }
+  99% {
+    opacity: 1;
+    transform: translate(-100%, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-100%, 0);
+  }
 }

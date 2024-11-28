@@ -3,6 +3,7 @@
   .container {
     display: flex;
     padding: 0;
+    overflow: hidden;
   }
   &__list {
     display: grid;
@@ -11,6 +12,10 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    @media (min-width: $desktop-width) {
+        display: flex;
+        animation: sliding 15s linear infinite;
+    }
   }
   &__item {
     height: 140px;
@@ -18,5 +23,23 @@
     align-items: center;
     justify-content: center;
     border: 1px solid #181823;
+    @media (min-width: $desktop-width) {
+        width: 340px;
+        flex-shrink: 0;
+    }
   }
 }
+
+@keyframes sliding {
+    0% {        
+        transform: translate(100%, 0);
+      }    
+      99% {    
+        opacity: 1;
+        transform: translate(-100%, 0);
+     }
+     100% {
+        opacity: 0;
+        transform: translate(-100%, 0);
+     }   
+ }
