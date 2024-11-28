@@ -784,6 +784,11 @@ header .container {
   padding: 50px 20px;
   gap: 40px;
 }
+@media (min-width: 768px) {
+  #projects .container {
+    padding: 70px 30px;
+  }
+}
 #projects .projects__text p {
   font-size: 16px;
   font-weight: 700;
@@ -797,6 +802,12 @@ header .container {
   line-height: 38.5px;
   margin-top: 0;
 }
+@media (min-width: 768px) {
+  #projects .projects__text h2 {
+    font-size: 55px;
+    line-height: 66.17px;
+  }
+}
 #projects .projects__list {
   list-style: none;
   display: flex;
@@ -804,15 +815,25 @@ header .container {
   gap: 50px;
   padding: 0;
 }
-#projects .projects__item {
+@media (min-width: 768px) {
+  #projects .projects__list {
+    margin: 0;
+  }
+}
+#projects .projects__list .projects__item {
   background-color: #181823;
 }
-#projects .projects__item img {
+#projects .projects__list .projects__item img {
   width: 100%;
   height: 400px;
   object-fit: cover;
 }
-#projects .projects__item h3 {
+@media (min-width: 768px) {
+  #projects .projects__list .projects__item img {
+    height: 620px;
+  }
+}
+#projects .projects__list .projects__item h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
@@ -820,10 +841,15 @@ header .container {
   margin-top: 35px;
   margin-bottom: 10px;
 }
-#projects .projects__item p {
+#projects .projects__list .projects__item p {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
   color: #8491A0;
   padding: 0 30px 20px;
+}
+@media (min-width: 768px) {
+  #projects .projects__list .projects__item p {
+    padding: 0 50px 25px 30px;
+  }
 }
