@@ -775,3 +775,24 @@ header .container {
     transform: translate(-100%, 0);
   }
 }
+#projects {
+  background-color: black;
+}
+#projects .container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+}
+#projects .projects__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0;
+}
+#projects .projects__item {
+  background-color: #181823;
+}
+#projects .projects__item img {
+  width: 100%;
+}

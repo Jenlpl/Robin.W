@@ -1,0 +1,21 @@
+#projects {
+    background-color: black;
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+    .projects__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 0;
+    }
+    .projects__item {
+        background-color: #181823;
+        img {
+            width: 100%;
+        }
+    }
+}
