@@ -905,9 +905,25 @@ header .container {
   flex-direction: column;
   padding: 0;
 }
+@media (min-width: 768px) {
+  .instagram .container {
+    flex-direction: row;
+  }
+}
 .instagram__text {
   padding: 20px 20px 40px;
   min-height: 450px;
+}
+@media (min-width: 768px) {
+  .instagram__text {
+    min-height: 600px;
+    padding: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .instagram__text {
+    padding: 60px 80px 60px 70px;
+  }
 }
 .instagram__text h2 {
   font-size: 32px;
@@ -916,12 +932,24 @@ header .container {
   color: #181823;
   margin-bottom: 0;
 }
+@media (min-width: 768px) {
+  .instagram__text h2 {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 66.17px;
+  }
+}
 .instagram__text p {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
   color: #5B6876;
   margin-top: 15px;
+}
+@media (min-width: 1440px) {
+  .instagram__text p {
+    margin-top: 20px;
+  }
 }
 .instagram__text a {
   font-size: 16px;
@@ -932,6 +960,42 @@ header .container {
   position: relative;
   top: 100px;
 }
+@media (min-width: 768px) {
+  .instagram__text a {
+    top: 120px;
+  }
+}
+@media (min-width: 1440px) {
+  .instagram__text a {
+    top: 140px;
+  }
+}
+.instagram__text a::before {
+  content: "Follow me on IG";
+}
+@media (min-width: 768px) {
+  .instagram__text a::before {
+    content: "More about me";
+  }
+}
+@media (min-width: 1440px) {
+  .instagram__text a::before {
+    content: "Follow me on IG";
+  }
+}
+.instagram picture {
+  height: 450px;
+}
+@media (min-width: 768px) {
+  .instagram picture {
+    width: 50%;
+  }
+}
 .instagram__img {
   object-fit: cover;
+}
+@media (min-width: 768px) {
+  .instagram__img {
+    min-height: 600px;
+  }
 }

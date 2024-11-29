@@ -4,16 +4,31 @@
 display: flex;
 flex-direction: column;
 padding: 0;
+@media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
     }
     &__text {
         padding: 20px 20px 40px;
         min-height: 450px;
+        @media (min-width: $tablet-width) {
+        min-height: 600px;
+        padding: 40px;
+        }
+        @media (min-width: $desktop-width) {
+        padding: 60px 80px 60px 70px;
+        }
         h2 {
 font-size: 32px;
 font-weight: 700;
 line-height: 38.5px;
 color: #181823;
 margin-bottom: 0;
+@media (min-width: $tablet-width){
+font-size: 55px;
+font-weight: 700;
+line-height: 66.17px;
+}
         }
         p {
 font-size: 18px;
@@ -21,6 +36,9 @@ font-weight: 400;
 line-height: 27px;
 color: #5B6876;
 margin-top: 15px;
+@media (min-width: $desktop-width) {
+    margin-top: 20px;
+    }
         }
         a {
 font-size: 16px;
@@ -30,9 +48,34 @@ color: #181823;
 display: block;
 position: relative;
 top: 100px;
+@media (min-width: $tablet-width){
+    top: 120px;
+}
+@media (min-width: $desktop-width){
+    top: 140px;
+}
+&::before {
+    content: "Follow me on IG";
+    @media (min-width: $tablet-width){
+        content: 'More about me';
+    }
+    @media (min-width: $desktop-width){
+        content: 'Follow me on IG';
+    }
+  }
+  
+        }
+    }
+    picture {
+        height: 450px;
+        @media (min-width: $tablet-width){
+            width: 50%;
         }
     }
     &__img {
     object-fit: cover;
+    @media (min-width: $tablet-width) {
+        min-height: 600px;
+        }
     }
 }
