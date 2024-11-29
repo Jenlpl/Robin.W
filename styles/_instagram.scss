@@ -1,0 +1,38 @@
+.instagram {
+    background-color: #FBE4FF;
+    .container {
+display: flex;
+flex-direction: column;
+padding: 0;
+    }
+    &__text {
+        padding: 20px 20px 40px;
+        min-height: 450px;
+        h2 {
+font-size: 32px;
+font-weight: 700;
+line-height: 38.5px;
+color: #181823;
+margin-bottom: 0;
+        }
+        p {
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+color: #5B6876;
+margin-top: 15px;
+        }
+        a {
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: #181823;
+display: block;
+position: relative;
+top: 100px;
+        }
+    }
+    &__img {
+    object-fit: cover;
+    }
+}
