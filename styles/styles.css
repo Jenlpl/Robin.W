@@ -991,12 +991,14 @@ header .container {
     width: 50%;
   }
 }
-.instagram__img {
+.instagram img {
   object-fit: cover;
+  width: 100%;
 }
 @media (min-width: 768px) {
-  .instagram__img {
+  .instagram img {
     min-height: 600px;
+    width: unset;
   }
 }
 
@@ -1014,6 +1016,18 @@ header .container {
 @media (min-width: 768px) {
   .dribbble .container {
     padding: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .dribbble .container {
+    padding: 60px;
+  }
+}
+@media (min-width: 1440px) {
+  .dribbble__text {
+    position: relative;
+    right: 220px;
+    width: 636px;
   }
 }
 .dribbble__text h2 {

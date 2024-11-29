@@ -72,10 +72,12 @@ top: 100px;
             width: 50%;
         }
     }
-    &__img {
+    img {
     object-fit: cover;
+    width: 100%;
     @media (min-width: $tablet-width) {
         min-height: 600px;
+        width: unset;
         }
     }
 }
