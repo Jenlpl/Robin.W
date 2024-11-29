@@ -1011,6 +1011,11 @@ header .container {
   padding: 25px 20px 65px;
   gap: 60px;
 }
+@media (min-width: 768px) {
+  .dribbble .container {
+    padding: 40px;
+  }
+}
 .dribbble__text h2 {
   font-size: 55px;
   font-weight: 700;
@@ -1029,4 +1034,9 @@ header .container {
   font-weight: 400;
   line-height: 24px;
   color: white;
+}
+@media (min-width: 768px) {
+  .dribbble picture {
+    padding: 60px 0 30px;
+  }
 }
