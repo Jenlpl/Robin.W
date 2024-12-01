@@ -1072,6 +1072,17 @@ header .container {
     gap: 20px;
   }
 }
+@media (min-width: 1440px) {
+  .opinion .container {
+    padding: 110px 80px;
+    gap: 100px;
+  }
+}
+@media (min-width: 1440px) {
+  .opinion__header {
+    width: 50%;
+  }
+}
 .opinion__header h2 {
   font-size: 32px;
   font-weight: 700;
@@ -1112,14 +1123,32 @@ header .container {
     margin: 0;
   }
 }
+@media (min-width: 1440px) {
+  .opinion__list {
+    width: 636px;
+    gap: 110px;
+  }
+}
 .opinion__list img {
   width: 332px;
+}
+@media (min-width: 1440px) {
+  .opinion__list img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+  }
 }
 .opinion__item {
   border: 1px solid #5b6876;
 }
 .opinion__content {
   padding: 0 25px 10px;
+}
+@media (min-width: 1440px) {
+  .opinion__content {
+    padding: 35px 45px;
+  }
 }
 .opinion__testimonial {
   font-size: 24px;
