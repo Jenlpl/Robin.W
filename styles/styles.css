@@ -896,3 +896,269 @@ header .container {
     right: 250px;
   }
 }
+
+.instagram {
+  background-color: #FBE4FF;
+}
+.instagram .container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .instagram .container {
+    flex-direction: row;
+  }
+}
+.instagram__text {
+  padding: 20px 20px 40px;
+  min-height: 450px;
+}
+@media (min-width: 768px) {
+  .instagram__text {
+    min-height: 600px;
+    padding: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .instagram__text {
+    padding: 60px 80px 60px 70px;
+  }
+}
+.instagram__text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.5px;
+  color: #181823;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .instagram__text h2 {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 66.17px;
+  }
+}
+.instagram__text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #5B6876;
+  margin-top: 15px;
+}
+@media (min-width: 1440px) {
+  .instagram__text p {
+    margin-top: 20px;
+  }
+}
+.instagram__text a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #181823;
+  display: block;
+  position: relative;
+  top: 100px;
+}
+@media (min-width: 768px) {
+  .instagram__text a {
+    top: 120px;
+  }
+}
+@media (min-width: 1440px) {
+  .instagram__text a {
+    top: 140px;
+  }
+}
+.instagram__text a::before {
+  content: "Follow me on IG";
+}
+@media (min-width: 768px) {
+  .instagram__text a::before {
+    content: "More about me";
+  }
+}
+@media (min-width: 1440px) {
+  .instagram__text a::before {
+    content: "Follow me on IG";
+  }
+}
+.instagram picture {
+  height: 450px;
+}
+@media (min-width: 768px) {
+  .instagram picture {
+    width: 50%;
+  }
+}
+.instagram img {
+  object-fit: cover;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .instagram img {
+    min-height: 600px;
+    width: unset;
+  }
+}
+
+.dribbble {
+  background-color: black;
+}
+.dribbble .container {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 20px 65px;
+  gap: 60px;
+}
+@media (min-width: 768px) {
+  .dribbble .container {
+    padding: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .dribbble .container {
+    padding: 60px;
+  }
+}
+@media (min-width: 1440px) {
+  .dribbble__text {
+    position: relative;
+    right: 220px;
+    width: 636px;
+  }
+}
+.dribbble__text h2 {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 66.17px;
+  margin-bottom: 20px;
+}
+.dribbble__text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #8491A0;
+  margin-bottom: 40px;
+}
+.dribbble__text a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: white;
+}
+@media (min-width: 768px) {
+  .dribbble picture {
+    padding: 60px 0 30px;
+  }
+}
+
+.opinion {
+  background-color: black;
+}
+.opinion .container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .opinion .container {
+    flex-direction: row;
+    align-items: unset;
+    padding: 70px 40px;
+    gap: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .opinion .container {
+    padding: 110px 80px;
+    gap: 100px;
+  }
+}
+@media (min-width: 1440px) {
+  .opinion__header {
+    width: 50%;
+  }
+}
+.opinion__header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.5px;
+  margin: 0 0 10px;
+}
+@media (min-width: 768px) {
+  .opinion__header h2 {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 66.17px;
+  }
+}
+.opinion__header p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #8491a0;
+}
+.opinion__header a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: white;
+  margin: 50px 0;
+  display: block;
+}
+.opinion__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  width: 332px;
+}
+@media (min-width: 768px) {
+  .opinion__list {
+    margin: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .opinion__list {
+    width: 636px;
+    gap: 110px;
+  }
+}
+.opinion__list img {
+  width: 332px;
+}
+@media (min-width: 1440px) {
+  .opinion__list img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+  }
+}
+.opinion__item {
+  border: 1px solid #5b6876;
+}
+.opinion__content {
+  padding: 0 25px 10px;
+}
+@media (min-width: 1440px) {
+  .opinion__content {
+    padding: 35px 45px;
+  }
+}
+.opinion__testimonial {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 65px;
+}
+.opinion__name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #8491a0;
+}
