@@ -1162,3 +1162,45 @@ header .container {
   line-height: 27px;
   color: #8491a0;
 }
+
+#photography {
+  background-color: black;
+}
+#photography .container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 50px;
+}
+#photography .photography__header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.5px;
+}
+#photography .photography__header p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #8491a0;
+}
+#photography .photography__buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px 0 40px;
+}
+#photography .photography__buttons button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: white;
+  background-color: black;
+  border: 1px solid #5221E6;
+  width: 148px;
+  height: 51px;
+  padding: 12px 16px 12px 16px;
+}
+#photography .photography__pictures {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
