@@ -1,3 +1,13 @@
+// const tabsPhotographies = document.querySelectorAll('.photography__tabs li');
+
+// async function loadModule() {
+//   if (tabsPhotographies) {
+//     const { initTabs } = await import('./modules/tabs.js');
+//     initTabs();
+//   }
+// }
+// loadModule();
+
 const navMain = document.querySelector('.nav');
 const navToggle = document.querySelector('.nav__toggle');
 
@@ -12,3 +22,4 @@ navToggle.addEventListener('click', () => {
     navMain.classList.remove('nav--opened');
   }
 });
+
