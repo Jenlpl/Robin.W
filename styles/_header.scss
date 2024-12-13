@@ -87,8 +87,6 @@ header {
   .nav__item {
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
 
     @media (max-width: $mobile-width-only) {
       height: 35px;
@@ -161,7 +159,10 @@ header {
 .nav__link {
   text-decoration: none;
   color: white;
-
+  display: block; /* Makes the <a> fill the entire <li> */
+  padding: 10px 20px; /* Adds some padding inside the <a> */
+  width: 100%; /* Ensures the <a> spans the entire <li> */
+  height: 100%; 
   @media (min-width: $tablet-width) {
     margin: 20px;
     width: 100%;

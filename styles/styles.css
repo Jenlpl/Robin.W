@@ -135,8 +135,6 @@ header .container {
 .nav__list .nav__item {
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 @media (max-width: 767px) {
   .nav__list .nav__item {
@@ -206,6 +204,10 @@ header .container {
 .nav__link {
   text-decoration: none;
   color: white;
+  display: block; /* Makes the <a> fill the entire <li> */
+  padding: 10px 20px; /* Adds some padding inside the <a> */
+  width: 100%; /* Ensures the <a> spans the entire <li> */
+  height: 100%;
 }
 @media (min-width: 768px) {
   .nav__link {
@@ -887,6 +889,7 @@ header .container {
   background-color: black;
   color: white;
   border: 1px solid #5221E6;
+  cursor: pointer;
 }
 @media (min-width: 1440px) {
   #projects .projects__button {
